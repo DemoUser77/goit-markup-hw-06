@@ -602,20 +602,25 @@
             </div>
             <label class="modal-form-label" for="user_message">Коментар</label>
             <textarea
-              class=""
+              class="modal-form-messege"
               name="user_message"
               id="user_message"
               rows="7"
-            ></textarea>
+            >
+            </textarea>
           </div>
-          <div class="">
-            <input class="" type="" id="" />
-            <label for=""
+          <div class="modal-form-agreement" role="group">
+            <input
+              class="modal-form-checkbox"
+              type="checkbox"
+              id="user_agreement"
+            />
+            <label class="modal-form-agreement-desc" for="user_agreement"
               >Погоджуюся з розсилкою та приймаю
-              <a href="">Умови договору</a>
+              <a class="modal-form-agreement-link" href="">Умови договору</a>
             </label>
           </div>
-          <button class="" type="submit">Відправити</button>
+          <button class="modal-form-button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
