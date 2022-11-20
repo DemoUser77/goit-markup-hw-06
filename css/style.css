@@ -506,50 +506,44 @@ img {
   margin-left: 93px;
 }
 .footer-button{
-  display: flex;
-  align-items: center;
-  text-align: center;
   width: 200px;
-
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
+  padding: 0;
 
-  gap: 10px;
-  padding: 10px 28px;
- 
+  cursor: pointer;
   color: #FFFFFF;
-  background: var(--color-main-button-footer);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: var(--color-main-button-footer);
   border-radius: 4px;
   border: none;
-  
 }
-.footer-email{
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.03em;
-  
-  width: 358px;
-  height: 50px;
-  
-  color: rgba(255, 255, 255, 0.6);
-  
-  outline:unset;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  
+.footer-send{
+  position: absolute;
+  margin-left: 10px;
 }
 
-.footer-send{
+.footer-email{
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
   
+  color:rgba(255, 255, 255, 0.6);;
+  background-color: transparent;
+  
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  fill:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: outline var(--transform-animation);
 }
+.footer-email:hover{
+outline: 1px solid  var(--color-main-button-footer);
+}
+
 
 /* Modal window*/
 
@@ -611,8 +605,13 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+
 .icon-close{
   fill: currentColor;
+}
+
+.icon-close:hover{
+  color: var(--color-main-button-footer);
 }
 
 .modal-label{
@@ -620,6 +619,7 @@ img {
   text-align: center;
   margin-bottom: 12px;
 }
+
 .modal-form-group{
   margin-bottom: 20px;
 }
@@ -632,6 +632,7 @@ img {
   
   color: #757575;
 }
+
 .modal-form-wrapper{
   position: relative;
   margin-bottom: 10px;
@@ -665,6 +666,7 @@ img {
 .modal-form-messege{
   width: 100%;
   height: 120px;
+  
   padding: 12px 16px;
   resize: none;
 
@@ -675,9 +677,18 @@ img {
 
   transition: outline var(--transform-animation);
 }
+:placeholder-shown{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  
+    color: rgba(117, 117, 117, 0.5);
+}
 .modal-form-messege:focus{
   outline: 1px solid #2196F3;
 }
+
 .modal-form-agreement{
   display: flex;
   align-items: center;
@@ -727,6 +738,7 @@ img {
   display: block;
   width: 200px;
   height: 50px;
+  font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   align-items: center;
